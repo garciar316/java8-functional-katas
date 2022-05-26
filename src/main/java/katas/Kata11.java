@@ -82,7 +82,7 @@ public class Kata11 {
                                                         (Integer) boxArt.get("width") * (Integer) boxArt.get("height")))
                                         .orElseThrow().get("url")
                         ))
-                        .collect(Collectors.toList())
-        )).collect(Collectors.toList());
+                        .collect(Collectors.toUnmodifiableList())
+        )).collect(Collectors.toUnmodifiableList());
     }
 }
