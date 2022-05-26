@@ -16,9 +16,10 @@ import java.util.Map;
     Output: Double
 */
 public class Kata5 {
+
     public static Double execute() {
         List<Movie> movies = DataUtil.getMovies();
-
-        return 3.0;
+        return movies.stream().map(Movie::getRating)
+                .reduce(0.0, (count, element) -> element > count ? element : count);
     }
 }

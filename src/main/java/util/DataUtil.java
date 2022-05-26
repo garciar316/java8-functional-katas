@@ -77,7 +77,7 @@ public class DataUtil {
     ]
     */
     public static List<Movie> getMovies() {
-        List<Movie> result = new ArrayList<Movie>();
+        List<Movie> result = new ArrayList<>();
         result.add(new Movie(70111470,
                 "Die Hard",
                 ImmutableList.of(
